@@ -1,0 +1,57 @@
+.reviews {
+  padding: 10.5rem 0;
+  background-color: #e6e5e5;
+}
+
+.reviews__slider {
+  max-width: 92rem;
+}
+
+.reviews__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.35;
+}
+
+.reviews__text {
+  margin-bottom: 2.5rem;
+}
+
+.reviews__avatar {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 1.6rem;
+  border-radius: 50%;
+}
+
+.reviews__name {
+  margin-bottom: 5rem;
+}
+
+.reviews__name span:first-child {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.reviews__slider .swiper-pagination-bullet {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.reviews__slider .swiper-pagination-bullet-active {
+  background: transparent;
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 0.1rem solid #ff7400;
+}
+
+.reviews-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

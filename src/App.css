@@ -1,38 +1,218 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*media*/
+@media (min-width: 48em) {
+  .dish__wrapper img:hover,
+  .gallery img:hover,
+  .cooks__wrapper img:hover {
+    transform: scale(1.05);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width: 80em) {
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 48em) {
+  .header {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .header__information {
+    display: none;
+  }
+
+  .header__burger {
+    display: block;
+  }
+
+  .hero {
+    background: url('./img/hero-mob.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 43.3rem;
+    min-height: 120rem;
+  }
+
+  .hero__suptext::after,
+  .hero__suptext::before {
+    display: none;
+  }
+
+  .hero__button {
+    font-size: 2.8rem;
+    padding: 2.8rem 9rem;
+  }
+
+  .advantages__wrapper {
+    flex-direction: column;
+  }
+
+  .advantages__wrapper .advantages__item + .advantages__item {
+    margin-top: 2.8rem;
+  }
+
+  .advantages__item {
+    width: 100%;
+    min-height: 53rem;
+  }
+
+  .advantages__icon {
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .advantages__header {
+    font-size: 4rem;
+    margin-bottom: 6rem;
+  }
+
+  .advantages__text {
+    font-size: 3.4rem;
+    line-height: 1.4;
+  }
+
+  .history__wrapper {
+    flex-direction: column;
+  }
+
+  .history__numbers {
+    flex-direction: column;
+  }
+
+  .history__sum {
+    font-size: 8rem;
+  }
+
+  .history__sum-text {
+    font-size: 4rem;
+  }
+
+  .history__item + .history__item {
+    margin-top: 4.4rem;
+  }
+
+  .history__header {
+    font-size: 10rem;
+    margin-bottom: 9rem;
+  }
+
+  .history__description {
+    width: 100%;
+    margin-bottom: 9rem;
+  }
+
+  .history__text {
+    font-size: 3.2rem;
+    margin-bottom: 10rem;
+  }
+
+  .history__img {
+    width: 100%;
+    height: 50rem;
+  }
+
+  .history__img-2 {
+    width: 38rem;
+    height: 50rem;
+  }
+
+  .holiday .container {
+    flex-direction: column;
+  }
+
+  .holiday__header {
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .holiday__adress {
+    text-align: center;
+  }
+
+  .holiday__text {
+    font-size: 4.8rem;
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  .holiday__button {
+    font-size: 2.8rem;
+  }
+
+  .reviews {
+    padding-top: 2rem;
+  }
+
+  .reviews__text {
+    font-size: 4rem;
+    line-height: 1.5;
+    margin-bottom: 5rem;
+  }
+
+  .reviews__avatar {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .reviews__name {
+    margin-bottom: 10rem;
+    font-size: 4rem;
+    line-height: 1.4;
+  }
+
+  .reviews__slider .swiper-pagination-bullet {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .reviews__slider .swiper-pagination-bullet-active {
+    width: 1.4rem;
+    height: 1.4rem;
+    border: 0.2rem solid #ff7400;
+  }
+
+  .gallery__item {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .gallery__item:first-child .gallery__img-b {
+    margin-bottom: 4rem;
+  }
+
+  .gallery__item:last-child .gallery__img-s:last-child {
+    margin-bottom: 4rem;
+  }
+
+  .gallery__item:first-child::after,
+  .gallery__item:first-child::before {
+    display: none;
+  }
+
+  .gallery__img {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .gallery__img-b {
+    width: 100%;
+    height: 55rem;
+  }
+
+  .gallery__img-s {
+    height: 62rem;
+    width: 100%;
+  }
+
+  .gallery__img-s:first-child {
+    margin-bottom: 4rem;
+  }
+
+  .gallery__item:first-child {
+    margin-bottom: 4rem;
+  }
+
+  .gallery__img-s img,
+  .gallery__img-b img {
+    object-fit: cover;
   }
 }

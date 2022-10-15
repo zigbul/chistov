@@ -1,0 +1,34 @@
+.reserve {
+  position: fixed;
+  display: none;
+  padding: 5rem 0;
+  overflow-y: scroll;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 200;
+}
+
+.reserve_active {
+  display: block;
+}
+
+.reserve__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: #ffffff;
+  height: 90vh;
+}
+
+.reserve__button_close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: white;
+}

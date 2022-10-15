@@ -1,0 +1,77 @@
+.history {
+  padding-bottom: 12.2rem;
+}
+
+.history__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.history__description {
+  width: 44.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history__header {
+  margin-bottom: 2.1rem;
+  font-weight: 400;
+  font-size: 5.4rem;
+  line-height: 1.15;
+}
+
+.history__text {
+  margin-bottom: 8rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.38;
+}
+
+.history__numbers {
+  display: flex;
+}
+
+.history__sum {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 1.35;
+  color: #bc9060;
+}
+
+.history__sum-text {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.35;
+}
+
+.history__item:nth-child(2) {
+  margin-left: 4.1rem;
+  margin-right: 3rem;
+}
+
+.history__img {
+  position: relative;
+  display: flex;
+  width: 53.9rem;
+  height: 49.7rem;
+}
+
+.history__img-1 {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transform: translate(0, -50%);
+  z-index: 10;
+  width: 23.3rem;
+  height: 30rem;
+  box-shadow: 2rem 0 3rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+
+.history__img-2 {
+  position: absolute;
+  right: 0;
+  height: 50rem;
+  filter: drop-shadow(0.3rem 0.7rem 0.7rem rgba(0, 0, 0, 0.25));
+}
