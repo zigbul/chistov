@@ -1,30 +1,19 @@
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 
 import Header from './Components/Header';
-import Hero from './Components/Hero';
-import Advantages from './Components/Advantages';
-import History from './Components/History';
-import Holiday from './Components/Holiday';
-import Reviews from './Components/Reviews';
-import Gallery from './Components/Gallery';
-import Menu from './Components/Menu';
-import Reserve from './Components/Reserve';
 import Footer from './Components/Footer';
+import MainPage from './Pages/MainPage';
+import MenuPage from './Pages/MenuPage';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <article className="main">
-        <Hero />
-        <Advantages />
-        <History />
-        <Holiday />
-        <Reviews />
-        <Gallery />
-        <Menu />
-        <Reserve />
-      </article>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="menu" element={<MenuPage />} />
+      </Routes>
       <Footer />
     </div>
   );
